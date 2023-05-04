@@ -5,7 +5,7 @@ html, body {
 }
 
 .page {
-  background: linear-gradient(124.14deg, rgba(255, 252, 243, 0) 20%, rgba(255, 252, 243, 0.2) 39.82%, rgba(255, 252, 243, 0) 60%), radial-gradient(154% 102% at 85% 32.47%, rgba(255, 252, 243, 0) 49.82%, rgba(230, 148, 247, 0.6) 82.11%), radial-gradient(124% 129% at 35% 78.47%, rgba(255, 252, 243, 0) 49.82%, rgba(255, 252, 243, 0.6) 82.11%), radial-gradient(125% 178% at 25% 4.47%, rgba(255, 252, 243, 0) 49.82%, rgba(255, 252, 243, 0.6) 82.11%), radial-gradient(41.58% 150.68% at 26.01% 45.34%, rgba(255, 252, 243, 0.6) 19.17%, rgba(255, 252, 243, 0) 100%), linear-gradient(84.14deg, rgba(230, 148, 247, 0.2) 2.84%, rgba(247, 161, 166, 0.2) 118.515%), radial-gradient(50% 120% at 100% 14.47%, rgba(175, 155, 241, 0) 6.9%, rgba(230, 195, 255, 0.5) 52.84%, rgba(175, 155, 241, 0) 100%), radial-gradient(56% 120% at 90% 112.47%, rgba(255, 155, 130, 0) 26.9%, rgba(202, 236, 189, 0.9) 72.84%, rgba(255, 155, 130, 0) 100%), radial-gradient(35% 68% at 35% 84.47%, #ffaf9b 49.82%, rgba(251, 211, 199, 0) 82.11%), linear-gradient(84.14deg, #bedbfa 2.84%, #caecbd 118.515%);
+  background: linear-gradient(124.14deg, rgba(255, 252, 243, 0) 20%, rgba(255, 252, 243, 0.2) 39.82%, rgba(255, 252, 243, 0) 60%), radial-gradient(154% 102% at 85% 32.47%, rgba(255, 252, 243, 0) 49.82%, rgba(228, 202, 233, 0.6) 82.11%), radial-gradient(124% 129% at 35% 78.47%, rgba(255, 252, 243, 0) 49.82%, rgba(255, 252, 243, 0.6) 82.11%), radial-gradient(125% 178% at 25% 4.47%, rgba(255, 252, 243, 0) 49.82%, rgba(255, 252, 243, 0.6) 82.11%), radial-gradient(41.58% 150.68% at 26.01% 45.34%, rgba(255, 252, 243, 0.6) 19.17%, rgba(255, 252, 243, 0) 100%), linear-gradient(84.14deg, rgba(230, 148, 247, 0.2) 2.84%, rgba(255, 249, 249, 0.911) 118.515%), radial-gradient(50% 120% at 100% 14.47%, rgba(175, 155, 241, 0) 6.9%, rgba(253, 250, 255, 0.384) 52.84%, rgba(175, 155, 241, 0) 100%), radial-gradient(56% 120% at 90% 112.47%, rgba(255, 155, 130, 0) 26.9%, rgba(214, 240, 204, 0.9) 72.84%, rgba(245, 231, 228, 0) 100%), radial-gradient(35% 68% at 35% 84.47%, #fff9f7 49.82%, rgba(251, 211, 199, 0) 82.11%), linear-gradient(84.14deg, #bedbfa 2.84%, #caecbd 118.515%);
 }
 
 .header {
@@ -52,7 +52,7 @@ html, body {
   display: block;
   padding: 1px 25px;
   font-size: 1.5vw;
-  font-family: "Cinzel", serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   transition: 0.5s;
 }
@@ -72,17 +72,19 @@ html, body {
 }
 
 .first_title {
-  margin-top: 3%;
+  margin-top: 9%;
   margin-bottom: 0%;
+  padding-bottom: 0%;
   color: #2246a2;
-  font-family: "Cinzel", serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: bolder;
-  --color-one: hsl(210 80% 50%);
-  --color-two: hsl(320 100% 75%);
-  --stretch-multiplier: 5;
-  font-size: clamp(2rem, 14vmin, 8rem);
+  --color-one: hsl(210, 77%, 45%);
+  --color-two: hsl(223, 62%, 67%);
+  --stretch-multiplier: 4;
+  font-size: clamp(4rem, 14vmin, 9rem);
   display: grid;
   line-height: 1;
+  font-variant: small-caps;
 }
 
 [aria-hidden] {
@@ -93,12 +95,12 @@ html, body {
 }
 
 .stretch-o {
-  height: 0.6ch;
-  width: calc(var(--stretch) * 1.16ch);
+  height: 0.8ch;
+  width: calc(var(--stretch) * 1.1ch);
   translate: 0 -0.01ch;
   border: 0.25ch solid #2246a2;
   border-radius: 1ch;
-  transition: width 0.2s;
+  transition: width 0.4s;
   position: relative;
 }
 
@@ -133,13 +135,13 @@ html, body {
 .first_subtitle {
   margin-bottom: 0%;
   color: #3c3d3c;
-  font-family: "Cinzel", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.5vw;
 }
 
 .first_text {
   color: #3c3d3c;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.8vw;
   font-style: oblique;
   font-weight: lighter;
