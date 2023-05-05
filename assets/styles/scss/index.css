@@ -1,11 +1,6 @@
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0;
-}
-
-.page {
-  background: linear-gradient(124.14deg, rgba(255, 252, 243, 0) 20%, rgba(255, 252, 243, 0.2) 39.82%, rgba(255, 252, 243, 0) 60%), radial-gradient(154% 102% at 85% 32.47%, rgba(255, 252, 243, 0) 49.82%, rgba(160, 195, 236, 0.6) 82.11%), radial-gradient(124% 129% at 35% 78.47%, rgba(255, 252, 243, 0) 49.82%, rgba(186, 216, 245, 0.6) 82.11%), radial-gradient(125% 178% at 25% 4.47%, rgba(255, 252, 243, 0) 49.82%, rgba(173, 206, 236, 0.6) 82.11%), radial-gradient(41.58% 150.68% at 26.01% 45.34%, rgba(174, 217, 241, 0.6) 19.17%, rgba(255, 252, 243, 0) 100%), linear-gradient(84.14deg, rgba(230, 148, 247, 0.2) 2.84%, rgba(163, 184, 241, 0.911) 118.515%), radial-gradient(50% 120% at 100% 14.47%, rgba(175, 155, 241, 0) 6.9%, rgba(253, 250, 255, 0.384) 52.84%, rgba(175, 155, 241, 0) 100%), radial-gradient(56% 120% at 90% 112.47%, rgba(255, 155, 130, 0) 26.9%, rgba(214, 240, 204, 0.9) 72.84%, rgba(245, 231, 228, 0) 100%), radial-gradient(35% 68% at 35% 84.47%, rgba(210, 210, 231, 0.9921568627) 49.82%, rgba(251, 211, 199, 0) 82.11%), linear-gradient(84.14deg, #bedbfa 2.84%, #caecbd 118.515%);
+  background: linear-gradient(124.14deg, rgba(255, 252, 243, 0) 20%, rgba(255, 252, 243, 0.2) 39.82%, rgba(255, 252, 243, 0) 60%), radial-gradient(154% 102% at 85% 32.47%, rgba(255, 252, 243, 0) 49.82%, rgba(160, 195, 236, 0.9176470588) 82.11%), radial-gradient(124% 129% at 35% 78.47%, rgba(255, 252, 243, 0) 49.82%, rgba(186, 216, 245, 0.6) 82.11%), radial-gradient(125% 178% at 25% 4.47%, rgba(255, 252, 243, 0) 49.82%, rgba(173, 206, 236, 0.6) 82.11%), radial-gradient(41.58% 150.68% at 26.01% 45.34%, rgba(174, 217, 241, 0.6) 19.17%, rgba(255, 252, 243, 0) 100%), linear-gradient(84.14deg, rgba(230, 148, 247, 0.2) 2.84%, rgba(163, 184, 241, 0.911) 118.515%), radial-gradient(50% 120% at 100% 14.47%, rgba(175, 155, 241, 0) 6.9%, rgba(253, 250, 255, 0.384) 52.84%, rgba(175, 155, 241, 0) 100%), radial-gradient(56% 120% at 90% 112.47%, rgba(255, 155, 130, 0) 26.9%, rgba(214, 240, 204, 0.9) 72.84%, rgba(245, 231, 228, 0) 100%), radial-gradient(35% 68% at 35% 84.47%, rgba(210, 210, 231, 0.9921568627) 49.82%, rgba(251, 211, 199, 0) 82.11%), linear-gradient(84.14deg, #bedbfa 2.84%, #caecbd 118.515%);
 }
 
 .header {
@@ -301,4 +296,104 @@ html, body {
   .menu li a {
     font-size: 5vw;
   }
+}
+.section_title {
+  margin-top: 6%;
+  display: grid;
+  justify-content: center;
+  font-size: 2.5vw;
+  color: #3c3d3c;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section_title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #2246a2;
+  width: 150px;
+  margin: 0 auto 5px;
+  transition: 1s;
+}
+
+.section_title:hover:before {
+  width: 250px;
+  transition: ease-out 1s;
+}
+
+.section_title:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #2246a2;
+  width: 150px;
+  margin: 5px auto 0;
+  transition: 1s;
+}
+
+.section_title:hover:after {
+  width: 250px;
+  transition: ease-out 1s;
+}
+
+.services_conteiner {
+  margin-top: 4%;
+  margin-left: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services_list {
+  margin-top: 4%;
+  margin-bottom: 1%;
+  list-style: none;
+}
+
+.services_list a {
+  width: 100%;
+  color: #3c3d3c;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  cursor: default;
+  display: inline-block;
+  padding-left: 5px;
+  line-height: 30px;
+  font-size: 1.8vw;
+  position: relative;
+  transition: 0.3s linear;
+}
+
+.services_decor a:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2246a2;
+  position: absolute;
+  left: -30px;
+  top: 7px;
+}
+
+.services_decor li {
+  position: relative;
+}
+
+.services_decor li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(160, 195, 236, 0.9176470588);
+  position: absolute;
+  top: 12px;
+  left: -30px;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+}
+
+.services_decor li:hover:before {
+  left: -20px;
 }/*# sourceMappingURL=index.css.map */
